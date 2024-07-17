@@ -92,7 +92,7 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
                 <div>
                     {cartItems.length > 0 && !paymentCompleted && (
                         <>
-                            <input
+                            <input className="Address"
                                 type="text"
                                 placeholder="Enter Delivery Address"
                                 value={deliveryAddress}
