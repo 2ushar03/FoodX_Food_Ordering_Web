@@ -11,6 +11,13 @@
     width: 25%;
 }
 
+@media screen and (max-width: 768px) {
+    .Address{
+        margin-top: 80px;
+        margin-left:-100px;
+    }
+}
+
 .carthead{
     display: flex;
     justify-content: space-around;
