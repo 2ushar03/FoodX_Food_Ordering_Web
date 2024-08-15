@@ -104,7 +104,7 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
                 </div>
             </div>
             <div className="history">
-                <button onClick={handleShowHistory}>
+                <button onClick={handleShowHistory} className="hbtn">
                     {showHistory ? "Hide History" : "Show History"}
                 </button>
                 {showHistory && !loading && <OrderHistory purchasedItems={purchasedItems}/> }
