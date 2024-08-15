@@ -1,4 +1,4 @@
-.containerhome {
+/* .containerhome {
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -6,16 +6,29 @@
     top: 0;
     background-color: white;
     text-align: center;
+} */
+
+.containerhome {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-width: 1275px;
+    top: 0;
+    border-radius: 90px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
-.cname {
+
+/* .cname {
     margin-top: 30px;
     margin-left: 30px;
     margin-bottom: 30px;
     padding: 10px;
     background: none;
     border: white;
-    background-color: beige;
+    background-color: rgb(255, 228, 201);
     border-radius: 30px;
     padding: 20px;
     font-size: larger;
@@ -28,7 +41,44 @@
     background-color: orangered;
     color: white;
     font-size: larger;
+} */
+
+.cname {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgb(255, 228, 201);
+    border-radius: 30px;
+    font-size: larger;
+    font-weight: 900;
+    position: relative;
+    box-shadow: 0 0 0 5px white;
 }
+
+.cname:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 35px;
+    box-shadow: 0 0 0 5px white;
+    pointer-events: none;
+}
+
+.cname:active {
+    transform: translateY(2px);
+}
+
+.cname:hover {
+    background-color: orangered;
+    color: white;
+    box-shadow: 0 0 0 5px white;
+    font-size: larger;
+}
+
 
 .searchbar {
     margin-top: 30px;
@@ -46,7 +96,9 @@
     margin-right: 10%;
     height: 30px;
     float: center;
+    color: black;
     position: fixed;
+    font-size: large;
     z-index: 1;
     border: white;
     background: none;
@@ -75,6 +127,8 @@
     margin-right: 5%;
     background: none;
     border: white;
+    color: black;
+    font-size: large;
     border-radius: 30px;
 }
 .cart:hover{

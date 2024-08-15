@@ -1,7 +1,7 @@
 .conatinerofcart{
     margin:20px auto;
     width: 70%;
-    background-color: rgb(218, 227, 239);
+    background-color: rgb(255, 248, 243);
     border: 2px solid black;
     justify-content: space-around;
     border-radius: 5%;
@@ -100,13 +100,18 @@
 .clearcart{
     border: none;
     border-radius: 5px;
-    background-color: red;
+    background-color: rgb(238, 78, 78);
     height: 30px;
     width: 100px;
     font-size: 18px;
     color: white;
 }
-
+.hbtn{
+    background-color: rgb(105, 132, 116);
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+}
 .history{
-    background-color: azure;
+    background-color: rgb(255, 248, 243);
 }
