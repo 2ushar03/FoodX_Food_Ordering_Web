@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(cors())
 
 app.get("/",cors(),(req,res)=>{
-
+    res.send("Hello");
 })
 
 app.post("/login",async(req,res)=>{
