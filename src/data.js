@@ -21,105 +21,105 @@ const data = {
       title: "Big Spicy Paneer Wrap Combo",
       info: "Enjoy Panner Wrap + Fries + Drink",
       price: 360.5,
-      image: SpicyPaneerWrapImage // Updated path
+      image: SpicyPaneerWrapImage
     },
     {
       id: "13",
       title: "Ice Cream",
       info: "Yummy!...",
       price: 60,
-      image: "./resources/Icecream.png"  // Updated path
+      image: IceCreamImage
     },
     {
       id: "14",
       title: "Paav Bhaji",
       info: "Tasty!...",
       price: 89,
-      image: "/resources/paavbhaji.png"  // Updated path
+      image: PaavBhajiImage
     },
     {
       id: "2",
       title: "Cake And Desert",
       info: "Enjoy Cake For Celebrations Buy1 Get 1 free",
       price: 380,
-      image: "/resources/cakeanddesert.png"  // Updated path
+      image: CakeAndDesertImage
     },
     {
       id: "3",
       title: "Dosa",
       info: "Yummy!...",
       price: 80,
-      image: "/resources/dosa.png"  // Updated path
+      image: DosaImage
     },
     {
       id: "4",
       title: "Idli",
       info: "Enjoy Idli",
       price: 30,
-      image: "/resources/idli.png"  // Updated path
+      image: IdliImage
     },
     {
       id: "5",
       title: "Juice",
       info: "Enjoy Juice To Be Fit",
       price: 45,
-      image: "/resources/juice.png"  // Updated path
+      image: JuiceImage
     },
     {
       id: "6",
       title: "Momos",
       info: "Enjoy Momos",
       price: 70,
-      image: "/resources/momos.png"  // Updated path
+      image: MomosImage
     },
     {
       id: "7",
       title: "2 McAloo Tikki Burger + 2 Fries",
       info: "Enjoy Tikki Burger with fries",
       price: 327.95,
-      image: "/resources/AlooTikiBurger.avif"  // Updated path
+      image: AlooTikiBurgerImage
     },
     {
       id: "8",
       title: "Margreta",
       info: "Enjoy Margreta Pizza",
       price: 349,
-      image: "/resources/Margretta.avif"  // Updated path
+      image: MargrettaImage
     },
     {
       id: "9",
       title: "Spicy Chicken Burger",
       info: "Enjoy Chicken Burger + fries +Drink",
       price: 388.95,
-      image: "/resources/McSpicyChicken.avif"  // Updated path
+      image: McSpicyChickenImage
     },
     {
       id: "10",
       title: "Peri Peri Pizza - Freshly Hand Tossed 7",
       info: "Enjoy Peri Peri Pizza",
       price: 359,
-      image: "/resources/Periperi.avif"  // Updated path
+      image: PeriPeriPizzaImage
     },
     {
       id: "11",
       title: "New York Style Cheese",
       info: "Enjoy the Classic New York Pizza! Topped with 100% whole milk Mozzarella",
       price: 199,
-      image: "/resources/Vegcorn.avif"  // Updated path
+      image: VegcornImage
     },
     {
       id: "12",
       title: "Veg Corn Pizza",
       info: "Enjoy Veg Corn Pizza",
       price: 200,
-      image: "/resources/cheese.avif"  // Updated path
+      image: CheesePizzaImage
     },
     {
       id: "15",
       title: "Veg Roll",
       info: "Yummy!...",
       price: 80,
-      image: "/resources/vegroll.png"  // Updated path
+      image: VegRollImage
     },
   ]
 };
