@@ -1,12 +1,12 @@
 import React from "react";
 import "./foods.css";
-import Spicypannerwrap from "./resources/Spicypannerwrap.png";
-import AlooTiki from "./resources/AlooTikiBurger.avif";
-import Margreta from "./resources/Margretta.avif";
-import SpicyChicken from "./resources/McSpicyChicken.avif";
-import Periperi from "./resources/Periperi.avif";
-import Vegcorn from "./resources/Vegcorn.avif";
-import Cheese from "./resources/cheese.avif";
+import Spicypannerwrap from "resources/Spicypannerwrap.png";
+import AlooTiki from "resources/AlooTikiBurger.avif";
+import Margreta from "resources/Margretta.avif";
+import SpicyChicken from "resources/McSpicyChicken.avif";
+import Periperi from "resources/Periperi.avif";
+import Vegcorn from "resources/Vegcorn.avif";
+import Cheese from "resources/cheese.avif";
 
 
 
