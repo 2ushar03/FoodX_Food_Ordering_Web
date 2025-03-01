@@ -18,7 +18,7 @@ function Foods(){
         <>
         <div className="foodstore">
         <div className="omg">
-            <img src={Spicypannerwrap} alt="Spicypannerwrap"/>
+            <img src={./resources/Spicypannerwrap.png} alt="Spicypannerwrap"/>
             <button>ADD</button>
             <h2>Big Spicy Paneer Wrap Combo</h2>
             <p>Rs 360.95</p>
