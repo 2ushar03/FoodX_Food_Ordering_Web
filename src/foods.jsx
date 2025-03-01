@@ -1,6 +1,6 @@
 import React from "react";
 import "./foods.css";
-import Spicypannerwrap from "resources/Spicypannerwrap.png";
+import Spicypannerwrap from "./resources/Spicypannerwrap.png";
 import AlooTiki from "resources/AlooTikiBurger.avif";
 import Margreta from "resources/Margretta.avif";
 import SpicyChicken from "resources/McSpicyChicken.avif";
