@@ -5,35 +5,35 @@ const data={
         title:"Big Spicy Paneer Wrap Combo",
         info:"Enjoy Panner Wrap + Fries + Drink",
         price:360.5,
-        image:"./resources/Spicypannerwrap.png"
+        image:"/resources/Spicypannerwrap.png"
     },
     {
         id:"13",
         title:"Ice Cream",
         info:"Yummy!...",
         price:60,
-        image:"/src/resources/Icecream.png"
+        image:"/resources/Icecream.png"
     },
     {
         id:"14",
         title:"Paav Bhaji",
         info:"Tasty!...",
         price:89,
-        image:"/src/resources/paavbhaji.png"
+        image:"/resources/paavbhaji.png"
     },
     {
         id:"2",
         title:"Cake And Desert",
         info:"Enjoy Cake For Celebrations Buy1 Get 1 free",
         price:380,
-        image:"/src/resources/cakeanddesert.png"
+        image:"/resources/cakeanddesert.png"
     },
     {
         id:"3",
         title:"Dosa",
         info:"Yummy!...",
         price:80,
-        image:"/src/resources/dosa.png"
+        image:"/resources/dosa.png"
     },
     {
         id:"4",
