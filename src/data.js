@@ -28,7 +28,7 @@ const data = {
       title: "Ice Cream",
       info: "Yummy!...",
       price: 60,
-      image: "/resources/Icecream.png"  // Updated path
+      image: "./resources/Icecream.png"  // Updated path
     },
     {
       id: "14",
