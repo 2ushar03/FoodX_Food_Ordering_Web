@@ -26,7 +26,7 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
             alert("Thanks for Shopping");
             window.location.reload();
             alert("Delivered to " + deliveryAddress);
-            window.location.href = "https://food-x-food-ordering-web.vercel.app/cart";
+            window.location.href = "https://food-x-food-ordering-web.vercel.app";
         } catch (error) {
             console.error("Error storing cart item history:", error);
         }
