@@ -21,7 +21,7 @@ const data = {
       title: "Big Spicy Paneer Wrap Combo",
       info: "Enjoy Panner Wrap + Fries + Drink",
       price: 360.5,
-      image: {SpicyPaneerWrapImage}  // Updated path
+      image: SpicyPaneerWrapImage // Updated path
     },
     {
       id: "13",
