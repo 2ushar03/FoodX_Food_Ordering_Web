@@ -82,20 +82,75 @@
 
 }
 
-.finalamt{
+.finalamt {
     display: flex;
-    padding-top: 20px; 
-    padding-bottom: 20px;
-    padding-left: 22%;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 35%;
     font-size: 20px;
     font-weight: 700;
     border-top: 2px solid black;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
 }
 
-.totprice{
+.finalamt-header {
     display: flex;
-    padding-left: 45%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
+
+.finalamt-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.totprice {
+    font-size: 26px;
+    font-weight: bold;
+    color: #4CAF50;
+    padding-left: 30px;
+}
+
+.payment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Address {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.Address:focus {
+    border-color: #4CAF50;
+}
+
+.paybtn {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.paybtn:hover {
+    background-color: #45a049;
+}
+
 
 .clearcart{
     border: none;
