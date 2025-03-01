@@ -1,3 +1,19 @@
+import SpicyPaneerWrapImage from './resources/Spicypannerwrap.png';
+import IceCreamImage from './resources/Icecream.png';
+import PaavBhajiImage from './resources/paavbhaji.png';
+import CakeAndDesertImage from './resources/cakeanddesert.png';
+import DosaImage from './resources/dosa.png';
+import IdliImage from './resources/idli.png';
+import JuiceImage from './resources/juice.png';
+import MomosImage from './resources/momos.png';
+import AlooTikiBurgerImage from './resources/AlooTikiBurger.avif';
+import MargrettaImage from './resources/Margretta.avif';
+import McSpicyChickenImage from './resources/McSpicyChicken.avif';
+import PeriPeriPizzaImage from './resources/Periperi.avif';
+import VegcornImage from './resources/Vegcorn.avif';
+import CheesePizzaImage from './resources/cheese.avif';
+import VegRollImage from './resources/vegroll.png';
+
 const data = {
   productItems: [
     {
@@ -5,7 +21,7 @@ const data = {
       title: "Big Spicy Paneer Wrap Combo",
       info: "Enjoy Panner Wrap + Fries + Drink",
       price: 360.5,
-      image: "/resources/Spicypannerwrap.png"  // Updated path
+      image: SpicyPaneerWrapImage  // Updated path
     },
     {
       id: "13",
