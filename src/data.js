@@ -5,7 +5,7 @@ const data={
         title:"Big Spicy Paneer Wrap Combo",
         info:"Enjoy Panner Wrap + Fries + Drink",
         price:360.5,
-        image:"/src/resources/Spicypannerwrap.png"
+        image:"./resources/Spicypannerwrap.png"
     },
     {
         id:"13",
