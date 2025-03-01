@@ -3,7 +3,7 @@ import axios from "axios";
 import "./cart.css";
 import Payment from "./payment";
 import OrderHistory from "./orderhistory";
-import "./payment.css"
+import "./payment.css";
 
 const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }) => {
     const [paymentCompleted, setPaymentCompleted] = useState(false);
@@ -20,12 +20,12 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
     const handlePaymentCompletion = async () => {
         try {
             const itemsWithAddress = cartItems.map(item => ({ ...item, deliveryAddress: deliveryAddress }));
-            await axios.post("https://foodx-back-fdsv.onrender.com/history", { items: itemsWithAddress, deliveryAddress }); // Include deliveryAddress in the request body
+            await axios.post("https://foodx-back-fdsv.onrender.com/history", { items: itemsWithAddress, deliveryAddress }); // Updated URL
             setPurchasedItems([...cartItems]);
             setPaymentCompleted(true);
             alert("Thanks for Shopping");
             window.location.reload();
-            alert("Delivered to "+deliveryAddress);
+            alert("Delivered to " + deliveryAddress);
         } catch (error) {
             console.error("Error storing cart item history:", error);
         }
@@ -35,31 +35,29 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
 
     useEffect(() => {
         const fetchData = async () => {
-          try {
-            const response = await axios.get("https://foodx-back-fdsv.onrender.com/history");
-            setData(response.data);
-          } catch (error) {
-            console.error("Error fetching data:", error);
-          }
+            try {
+                const response = await axios.get("https://foodx-back-fdsv.onrender.com/history"); // Updated URL
+                setData(response.data);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
         };
-    
+
         fetchData();
-      }, []);
+    }, []);
 
     const handleShowHistory = async () => {
-    try {
-        setLoading(true);
-        const itemsWithAddress = cartItems.map(item => ({ ...item, deliveryAddress: deliveryAddress }));
-        await axios.post("https://foodx-back-fdsv.onrender.com/history", { items: itemsWithAddress });
-        setShowHistory(!showHistory);
-        setLoading(false);
-    } catch (error) {
-        console.error("Error storing cart item history:", error);
-        setLoading(false);
-    }
-};
-
-    
+        try {
+            setLoading(true);
+            const itemsWithAddress = cartItems.map(item => ({ ...item, deliveryAddress: deliveryAddress }));
+            await axios.post("https://foodx-back-fdsv.onrender.com/history", { items: itemsWithAddress }); // Updated URL
+            setShowHistory(!showHistory);
+            setLoading(false);
+        } catch (error) {
+            console.error("Error storing cart item history:", error);
+            setLoading(false);
+        }
+    };
 
     return (
         <div className="conatinerofcart">
@@ -107,13 +105,16 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
                 <button onClick={handleShowHistory} className="hbtn">
                     {showHistory ? "Hide History" : "Show History"}
                 </button>
-                {showHistory && !loading && <OrderHistory purchasedItems={purchasedItems}/> }
+                {showHistory && !loading && <OrderHistory purchasedItems={purchasedItems} />}
                 {showHistory && !loading && 
                     <div>
                         <h1>Transaction History</h1>
                         <ul>
                             {data.map((item) => (
-                                <li key={item._id} >{item.title} - Quantity: {item.quantity}, Price: Rs{item.price}</li>
+                                <div key={item._id}>
+                                    <h2>{item.Delivery_Address}</h2>
+                                    <li>{item.title} - Quantity: {item.quantity}, Price: Rs{item.price}</li>
+                                </div>
                             ))}
                         </ul>
                     </div>
