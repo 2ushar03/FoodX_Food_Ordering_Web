@@ -12,7 +12,7 @@ function login(){
     async function submit(e){
         e.preventDefault();
         try{
-            await axios.post("https://foodx-back-fdsv.onrender.com/login",{
+            await axios.post("https://3.215.15.128/login",{
                 user,password
             })
             .then(res=>{
