@@ -20,7 +20,7 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
     const handlePaymentCompletion = async () => {
         try {
             const itemsWithAddress = cartItems.map(item => ({ ...item, deliveryAddress: deliveryAddress }));
-            await axios.post("https://3.215.15.128/history", { items: itemsWithAddress, deliveryAddress }); // Updated URL
+            await axios.post("https://foodx-back-fdsv.onrender.com/history", { items: itemsWithAddress, deliveryAddress }); // Updated URL
             setPurchasedItems([...cartItems]);
             setPaymentCompleted(true);
             alert("Thanks for Shopping");
@@ -37,7 +37,7 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("https://3.215.15.128/history"); // Updated URL
+                const response = await axios.get("https://foodx-back-fdsv.onrender.com/history"); // Updated URL
                 setData(response.data);
             } catch (error) {
                 console.error("Error fetching data:", error);
@@ -51,7 +51,7 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
         try {
             setLoading(true);
             const itemsWithAddress = cartItems.map(item => ({ ...item, deliveryAddress: deliveryAddress }));
-            await axios.post("https://3.215.15.128/history", { items: itemsWithAddress }); // Updated URL
+            await axios.post("https://foodx-back-fdsv.onrender.com/history", { items: itemsWithAddress }); // Updated URL
             setShowHistory(!showHistory);
             setLoading(false);
         } catch (error) {
