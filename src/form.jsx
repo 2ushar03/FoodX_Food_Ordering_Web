@@ -17,7 +17,7 @@ function Form() {
         return;
       }
 
-      await axios.post("https://3.215.15.128/form", {
+      await axios.post("https://foodx-back-fdsv.onrender.com/form", {
         user, email, password
       })
       .then(res => {
