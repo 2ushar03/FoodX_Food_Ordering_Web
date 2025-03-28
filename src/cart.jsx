@@ -20,13 +20,13 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
     const handlePaymentCompletion = async () => {
         try {
             const itemsWithAddress = cartItems.map(item => ({ ...item, deliveryAddress: deliveryAddress }));
-            await axios.post("https://52.55.95.27/history", { items: itemsWithAddress, deliveryAddress }); // Updated URL
+            await axios.post("https://foodx-back-fdsv.onrender.com/history", { items: itemsWithAddress, deliveryAddress }); // Updated URL
             setPurchasedItems([...cartItems]);
             setPaymentCompleted(true);
             alert("Thanks for Shopping");
             window.location.reload();
             alert("Delivered to " + deliveryAddress);
-            // window.location.href = "https://food-x-food-ordering-web.vercel.app";
+            window.location.href = "https://food-x-food-ordering-web.vercel.app";
         } catch (error) {
             console.error("Error storing cart item history:", error);
         }
@@ -37,7 +37,7 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("https://52.55.95.27/history"); // Updated URL
+                const response = await axios.get("https://foodx-back-fdsv.onrender.com/history"); // Updated URL
                 setData(response.data);
             } catch (error) {
                 console.error("Error fetching data:", error);
@@ -51,7 +51,7 @@ const Cart = ({ cartItems, handleAddProduct, handleDelProduct, handleCartClear }
         try {
             setLoading(true);
             const itemsWithAddress = cartItems.map(item => ({ ...item, deliveryAddress: deliveryAddress }));
-            await axios.post("https://52.55.95.27/history", { items: itemsWithAddress }); // Updated URL
+            await axios.post("https://foodx-back-fdsv.onrender.com/history", { items: itemsWithAddress }); // Updated URL
             setShowHistory(!showHistory);
             setLoading(false);
         } catch (error) {
